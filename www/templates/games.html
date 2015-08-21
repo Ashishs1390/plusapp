@@ -1,0 +1,66 @@
+<ion-view>
+  <ion-content class="bkimg">
+
+  
+<div style="display: -webkit-box;margin-top: 17px;">
+      <div style="width: 54%; margin-left: 15px;">       
+      <img class="rwbutton"   ng-src="img/right-btn.png">
+      <div style="margin-left: 110px; margin-top: -34px;" >{{right}}</div>
+    </div>
+
+    <div >     
+      <img class="rwbutton"  ng-src="img/wrong-btn.png">
+      </div>
+    <div style="margin-top: 10px; margin-left: -23px;" >{{wrong}}</div>
+</div>
+       
+
+
+
+
+
+    <div>
+      <div style="width:100%;margin-top: 10px;height: 170px; ">
+      <div ng-repeat="imga in imgarr" style="width: 300px;margin-left: auto; margin-right: auto;text-align: center;display: block;">
+       <img class="wh" ng-src="{{imga}}" style="float: left;margin-left: 5%;margin-top: 12px;"> 
+      </div>
+    </div>
+    </div>
+
+
+<div style="clear:both;"></div>
+<h1 style="text-align:center; margin-bottom:15px;"><img class="wh" ng-src="img/Plus.png"></h1>
+
+
+<div style="width:100%;margin-top: 5px;height: 170px;">
+<div ng-repeat="imga in imgarr1" style="width: 300px;margin-left: auto; margin-right: auto;text-align: center;display: block;">
+<img class="wh" ng-src="{{imga}}" style="float: left;margin-left: 5%;margin-top: 12px;"> 
+</div>
+</div>
+<div style="clear:both;"></div>
+
+
+    <div style=" margin-left: 12%; ">
+    <div>
+  <button class="button but1"  ng-click="button1(answer[0])">{{answer[0]}}</button>
+    </div>
+    <div>
+  <button class="button but2"  ng-click="button1(answer[1])">{{answer[1]}}</button>
+    </div>
+    <div>
+  <button class="button but3"  ng-click="button1(answer[2])">{{answer[2]}}</button>
+    </div>
+    <div>
+  <button class="button but4"  ng-click="button1(answer[3])">{{answer[3]}}</button>
+  </div>
+  </div>
+
+  <h3 style="text-align:center;">{{mesg}}</h3>
+  </ion-content>
+</ion-view>
+
+
+
+<!-- <div style="float:left;">
+ <img  ng-click="button1(ans)" ng-src="img/1.png"> {{ans}}
+  </div> -->
